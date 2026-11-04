@@ -94,6 +94,10 @@ if uploaded_file is not None:
         st.write("### Classification Report")
         report = classification_report(y_test_encoded, y_pred, target_names=label_encoder.classes_, output_dict=True)
         report_df = pd.DataFrame(report).transpose()
+        
+        # Drop the confusing summary rows, keeping only the actual seed types
+        report_df = report_df.drop(['accuracy', 'macro avg', 'weighted avg'], errors='ignore')
+        
         st.dataframe(report_df.style.format(precision=4))
 
     except Exception as e:

@@ -42,3 +42,7 @@ I trained and evaluated the following five machine learning models on a 20% test
 | **Naive Bayes** | Had a great AUC score, but the accuracy was a bit lower. It assumes all features are independent, which isn't really true here (e.g., a bean's area and perimeter are obviously related). | 
 | **Support Vector Machine** | Just slightly edged out Logistic Regression to take the top spot in almost every main metric. | 
 | **Overall, Winner for dataset?** | **Support Vector Machine (SVM)**. It gave the best Accuracy (0.9221) and MCC (0.9059). It seems to handle the overlapping physical features slightly better than the rest of the algorithms. | 
+
+### Streamlit App link
+
+https://2026aj05295mlassignment2-csp3nr5zs7weus9qs27e4q.streamlit.app

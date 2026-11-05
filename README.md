@@ -14,7 +14,7 @@ I chose the **Dry Bean Dataset** from the UCI Machine Learning Repository for th
 
 * **Target:** 1 categorical column (`Class`) containing the 7 bean varieties (Seker, Barbunya, Bombay, Cali, Dermason, Horoz, Sira).
 
-This dataset fits the assignment constraints perfectly (well over 500 instances and 12+ features). It's also fully numeric with no missing values, making it a great clean dataset to test out these baseline models. Full dataset file is present in the dataset directory of this project.
+This dataset fits the assignment constraints perfectly (well over 500 instances and 12+ features). It's also fully numeric with no missing values, making it a great clean dataset to test out these baseline models. Full dataset file is present at https://raw.githubusercontent.com/2026aj05295-source/2026aj05295_ml_assignment2/refs/heads/main/dataset/Dry_Bean_Dataset.csv.
 
 ## c. Github Repository Link
 

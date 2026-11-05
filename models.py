@@ -13,7 +13,7 @@ from sklearn.metrics import (accuracy_score, roc_auc_score, precision_score,
 
 # 1. Load the local dataset
 print("Loading local Dry Bean dataset...")
-df = pd.read_csv('Dry_Bean_Dataset.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/2026aj05295-source/2026aj05295_ml_assignment2/refs/heads/main/dataset/Dry_Bean_Dataset.csv')
 
 # Separate features (X) and target (y)
 X = df.drop(columns=['Class'])

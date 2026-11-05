@@ -1,5 +1,7 @@
 import pandas as pd
 import joblib
+import requests
+import io
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.linear_model import LogisticRegression
@@ -13,7 +15,8 @@ from sklearn.metrics import (accuracy_score, roc_auc_score, precision_score,
 
 # 1. Load the local dataset
 print("Loading local Dry Bean dataset...")
-df = pd.read_csv('https://raw.githubusercontent.com/2026aj05295-source/2026aj05295_ml_assignment2/refs/heads/main/dataset/Dry_Bean_Dataset.csv')
+response = requests.get('https://raw.githubusercontent.com/2026aj05295-source/2026aj05295_ml_assignment2/refs/heads/main/dataset/Dry_Bean_Dataset.csv')
+df = pd.read_csv(io.StringIO(response.text))
 
 # Separate features (X) and target (y)
 X = df.drop(columns=['Class'])
